@@ -4,7 +4,7 @@ require "selenium-webdriver"
 
 module NextPowerInvoiceDownloader
   class Downloader
-    ROOT_URL = "https://haseko-smartmansion.ipps.co.jp/?q=node/86"
+    ROOT_URL = "https://np-smartmansion.ipps.co.jp/?q=node/86"
 
     def initialize(id, pass, chrome_path)
       @id = id
