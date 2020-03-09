@@ -18,11 +18,11 @@ module NextPowerInvoiceDownloader
 
       driver.navigate.to(ROOT_URL)
 
-      driver.find_element(:name, "name").send_keys(@id)
+      driver.find_element(:name, "user_id").send_keys(@id)
       driver.find_element(:name, "pass").send_keys(@pass)
       driver.find_element(:id, "edit-submit").click
 
-      menu_link_xpath = '//a[@href="/?q=node/24"]'
+      menu_link_xpath = '//a[@href="/details"]'
       wait.until { driver.find_element(:xpath, menu_link_xpath).displayed? }
       driver.find_element(:xpath, menu_link_xpath).click
 
